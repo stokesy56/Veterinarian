@@ -1,12 +1,12 @@
 class Appointment:
-    def __init__(self, date, time, pet_name, owner, vet_name):
+    def __init__(self, date, time, pet = '', owner = '', vet = ''):
         self.date = date
         self.time = time
         self.owner = owner
-        self.pet_name = pet_name
-        self.vet_name = vet_name
+        self.pet = pet
+        self.vet = vet
 
-    def appt_details(self):
-        appt_details = {
-            'date': self
-        }
+    def add_pet(self,pet,owner,vet):
+        self.pet = pet
+        self.owner = owner
+        self.vet = vet
